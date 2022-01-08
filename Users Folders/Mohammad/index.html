@@ -17,8 +17,9 @@
 <body>
     <div class="box">
         <h2>
-            random password generator
+            <p>random password generator</p>
         </h2>
+
         <table class="tableOftxt">
 
             <tr>
@@ -27,7 +28,8 @@
 
 
             <tr>
-                <td><input type="text" placeholder="Create Password" id="password1" readonly></td>
+                <td><input type="text" placeholder="Create Password" id="password1" onmouseover="appear(password1)"
+                        readonly></td>
             </tr>
 
             <tr>
@@ -47,12 +49,11 @@
 
 
 
+
+
+
         <div id="button" class="btn1" onclick="genPasswords()">Generate</div>
 
-        <form action="">
-
-
-        </form>
 
         <select name="PasswordLength" id="selectPassLength">
             <option value="12" selected="selected">12</option>
