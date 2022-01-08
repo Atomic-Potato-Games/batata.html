@@ -7,17 +7,19 @@ document.getElementById("potatoButton").onclick = function(){
 	document.getElementById("potatoButton").style.display = "none";
 }
 */
-{
-	var FiringHackVideo = document.getElementById("superfireratehacking");
-	var FiringNormalVideo = document.getElementById("superfireratenormal");
 
+
+var FiringHackVideo = document.getElementById("superfireratehacking");
+var FiringNormalVideo = document.getElementById("superfireratenormal");
+
+FiringNormalVideo.muted = true;
+FiringNormalVideo.play();
+FiringHackVideo.style.display = "none";
+
+document.getElementById("videoPlayButton").onclick = function(){
+	FiringHackVideo.style.display = "inline";
+	FiringHackVideo.play();
+	FiringNormalVideo.currentTime = '0';
 	FiringNormalVideo.play();
-	FiringHackVideo.style.display = "none";
-
-	document.getElementById("videoPlayButton").onclick = function(){
-		FiringHackVideo.style.display = "block";
-		FiringHackVideo.play();
-		FiringNormalVideo.currentTime = '0';
-		FiringNormalVideo.play();
-	}
 }
+

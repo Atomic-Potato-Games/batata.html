@@ -1,4 +1,5 @@
-#rightVideo{
-	position: absolute;
-	right: 400px;
+#wrapper
+{
+	width: 50%;
+	margin: 0 auto;
 }
