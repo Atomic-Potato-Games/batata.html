@@ -18,16 +18,27 @@ function genPassword(id) {
 
 
     }
+    document.getElementById(id).style.backgroundColor = "lightgreen";
+
+
     document.getElementById(id).value = pswd;
 
 
 
 }
+function appear(id) {
+    document.getElementById(id).style.color = "black";
+}
+
 function genPasswords() {
+
     genPassword("password");
+
     genPassword("password1");
+
     genPassword("password2");
     genPassword("password3");
     genPassword("password4");
     genPassword("password5");
 }
+
