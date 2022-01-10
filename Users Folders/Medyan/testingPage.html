@@ -17,15 +17,20 @@
         		</p>
 	        	<button button id="showHacksButton" style="display: block; margin: 0 auto;">Next</button>
 	        	<button button id="showHacksButton1" style="display: block; margin: 0 auto;">Dectect Hacks</button>
+	        	<button button id="ResetButton" style="display: block; margin: 0 auto;">Reset</button>
         	</div>
         	
             <div style="display: flex; column-gap:0.5rem;">
-                <video video id="superfireratenormal" loop height="180" width="320">
+                <video video id="superfireratenormal" loop height="270" width="480">
                     <source src="superfireratenormal.mp4" type="video/mp4">
                 </video>
-                <video  id="superfireratehacking" loop height="180" width="320">
+                <div id="leftRedBox" style="border: 3px ridge red; width: 25px; height: 25px; position: relative; left: -100px; top: 230px;"></div>
+                <p id="BulletCounterLeft" style="font-size: 50px; position: relative; left: -500px; color: red">Time</p>
+                <video  id="superfireratehacking" loop height="270" width="480">
                     <source src="superfireratehacking.mp4" type="video/mp4">
                 </video>
+                <div id="rightRedBox" style="border: 3px ridge red; width: 25px; height: 25px; position: relative; left: -100px; top: 230px;"></div>
+                <p id="BulletCounterRight" style="font-size: 50px; position: relative; left: -500px; color: red">Time</p>
             </div>
             
         </div>
