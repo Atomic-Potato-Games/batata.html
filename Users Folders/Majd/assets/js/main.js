@@ -102,7 +102,7 @@ const hckrReceive = mssge => {
   serverCht.classList.add("Bob", "chat", "chat-sent");
   serverMssg.classList.add("Bob", "message-sent");
   serverMssg.innerText = text;
-  hckrCht.appendChild(serverMssg);
+  serverCht.appendChild(serverMssg);
   phone2.appendChild(serverCht);
   console.log(text);
 }
