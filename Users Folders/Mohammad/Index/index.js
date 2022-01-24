@@ -1,7 +1,7 @@
 
 
 var counter = 1;
-setInterval(display, 2000);
+setInterval(display, 8000);
 
 var mouse = false;
 function mouseStatus(n) {
