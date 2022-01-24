@@ -14,9 +14,7 @@ function genPassword(id) {
     for (var i = 0; i <= passwordLength; i++) {
 
         var randomNumber = Math.floor(Math.random() * chars.length);
-        pswd += chars.substring(randomNumber, randomNumber + 1);
-
-
+        pswd += chars[randomNumber];
     }
     document.getElementById(id).style.backgroundColor = "lightgreen";
 
