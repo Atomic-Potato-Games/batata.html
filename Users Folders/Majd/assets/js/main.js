@@ -92,7 +92,7 @@ const bobSend = mssge => {
   phone1.appendChild(BobCht);
 }
 
-const serverReceive = mssge => {
+const hckrReceive = mssge => {
   let text = '';
    mssge.map(letter => {
     text += letter;
