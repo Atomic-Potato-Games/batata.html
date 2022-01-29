@@ -1,0 +1,66 @@
+body
+{
+	margin: 0%;
+}
+.navLinks
+{
+	display: inline-block;
+
+	width: 250px;
+
+	text-align: center;
+	font-size: 25px;
+
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	border-style: solid;
+	border-width: thick;
+	border-color: #FFCB9A;
+
+	background-color: #2C3531;
+	color: #FFCB9A;
+	text-decoration: none;
+}
+
+#navheading
+{
+	clear: right; 
+	padding-left: 25px; 
+	margin-top: 0px; 
+	margin-bottom: 0px; 
+	font-size: 40px; 
+	color: #FFCB9A;
+}
+
+#navigation
+{
+	display: none; 
+	position: fixed; 
+	float: left;
+
+	right: 0%; 
+	top: 50px; 
+}
+
+#navbutton
+{
+	position: absolute; 
+	float: left; 
+
+	right: 0%; 
+	padding-right: 10px;
+}
+
+#topButton
+{
+	display: none;
+	position: fixed;
+
+	bottom: 2%;
+	right: 5%;
+
+	background-color: #FFCB9A;
+}
