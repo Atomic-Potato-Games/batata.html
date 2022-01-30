@@ -1,0 +1,26 @@
+*
+{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.MainDivisions
+{
+    display: flex;
+    column-gap: 150px;
+    justify-content: center;
+
+    background-color: #FFCB9A;
+    color: #116466;
+
+    font-size: 17px;
+
+    height: 400px;
+}
+
+.description
+{
+    position: relative;
+    margin-top: 100px;
+    left: 0%;
+}
