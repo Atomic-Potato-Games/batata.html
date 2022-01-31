@@ -7,15 +7,22 @@
 .MainDivisions
 {
     display: flex;
-    column-gap: 150px;
+    column-gap: 15%;
     justify-content: center;
 
-    background-color: #FFCB9A;
-    color: #116466;
+    color: #ffffff;
 
     font-size: 17px;
 
     height: 400px;
+}
+
+.SubDivisions
+{
+    border-right: 2px solid gray;
+    border-style: solid;
+    border-width: thick;
+    height: 100px;
 }
 
 .description
@@ -23,4 +30,12 @@
     position: relative;
     margin-top: 100px;
     left: 0%;
+}
+
+#joinus
+{
+    background-image: url("joinus.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
