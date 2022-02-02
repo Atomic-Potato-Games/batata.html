@@ -1,0 +1,55 @@
+html{margin : 0px;}
+body{margin : 0px; padding: 0px;}
+
+body{background-image:url("../images/World-Map-Dots.gif"); background-repeat: no-repeat; background-size: 2000px; background-position-x: center;}
+
+header{position:fixed; font-family:'Gill Sans', 'Gill Sans MT', Calibri; text-align: center;}
+
+
+#main_header{ font-size:4em;}
+#main_header h1:first-of-type{ vertical-align: bottom; margin:0px; padding-left:3%;}
+#main_header h1:last-of-type{ vertical-align: bottom; margin:0px; padding-right:3%;}
+
+#main_header img{ vertical-align: middle;margin-left:auto; margin-right:auto;}
+
+
+
+#main_header{margin:8px 8px 0px 8px;}
+#main_header{border-radius: 60px; border-style:ridge; background-color: white;border-width: 15px; border-color: black;}
+#main_header{box-shadow: 2px 7px 5px gray;}/*Additional Effects*/
+
+
+#headings div
+{background-color: white;}
+
+#headings
+{width: min-content; width:100%;}
+
+#headings
+{font-size: 1.24em;}
+
+#headings/*margin*/
+{margin:0px;}
+
+#headings div
+{display:inline;box-shadow: 2px 5px 5px gray;}
+#headings div
+{margin-right:3%; margin-left: 3%;}
+
+#headings div
+{padding: 0px 15px 0px 15px;}
+
+#headings div
+{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-style:ridge;
+    border-width: 7px;
+    border-color: black;
+    border-top:0px;
+}
+
+.service{display: none;}
+.service{height:500px; width : 100%;}/*dimensions*/
+.service{background-color: #116466;}
+.service{border-width: 15px; border-color:grey;}
