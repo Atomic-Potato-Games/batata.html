@@ -16,12 +16,8 @@ body
 	padding-top: 50px;
 	padding-bottom: 50px;
 
-	border-style: solid;
-	border-width: thick;
-	border-color: #FFCB9A;
-
-	background-color: #2C3531;
-	color: #FFCB9A;
+	background-color: #000000;
+	color: #ffffff;
 	text-decoration: none;
 }
 
@@ -43,8 +39,8 @@ body
 #navigation
 {
 	display: none; 
-	position: fixed; 
-	float: left;
+	position: absolute;
+	float: right;
 
 	right: 0%; 
 	top: 50px; 
@@ -57,6 +53,7 @@ body
 
 	right: 0%; 
 	padding-right: 10px;
+	padding-top: 7px;
 }
 
 #topButton
@@ -66,6 +63,4 @@ body
 
 	bottom: 2%;
 	right: 5%;
-
-	background-color: #FFCB9A;
 }

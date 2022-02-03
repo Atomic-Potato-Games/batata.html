@@ -10,7 +10,7 @@ navButton.onclick = function()
 {
     if(!navIsOn)
     {
-        navigation.style.display = "block";
+        navigation.style.display = "initial";
         navIsOn = true;
     }
     else

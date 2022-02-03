@@ -32,6 +32,12 @@
     left: 0%;
 }
 
+.bio
+{
+    text-align: center; 
+    width: 225px;
+}
+
 #joinus
 {
     background-image: url("joinus.jpg");
