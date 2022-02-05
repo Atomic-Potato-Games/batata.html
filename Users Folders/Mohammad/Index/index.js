@@ -19,7 +19,7 @@ function display() {
         }
         // document.getElementById("password1").value = counter % 5;
 
-        document.getElementById('div' + (counter % 5)).style.display = "block";
+        document.getElementById('div' + (counter % 5)).style.display = "flex";
         document.getElementById('div' + (counter % 5)).style.opacity = ".4"
 
         document.getElementById('div' + (counter % 5)).style.opacity = "1"
