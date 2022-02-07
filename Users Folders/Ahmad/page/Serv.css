@@ -1,0 +1,24 @@
+
+body{margin:0px; font-family: sans-serif; color:#D2D3D3; background-color: #2D3032; background-image: url("webBackground.gif");}
+
+main{min-height: 65vmax;}
+/*color pallete
+    #7D7F80
+    #D2D3D3
+    #555759
+    #2D3032
+    #9615DB
+*/
+
+nav input{font-size: 1.4em; border-style: outset;}
+nav input#submit
+{
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-style: outset;
+}
+
+.service{display:none; background-color: #FFFFFF; color:#7D7F80;}
+
+#PassCheckForm input
+{font-size: 2em;}
