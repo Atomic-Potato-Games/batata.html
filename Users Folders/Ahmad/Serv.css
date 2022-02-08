@@ -1,0 +1,95 @@
+body{
+    margin:0px;
+
+    font-family: sans-serif;
+    color:#D2D3D3;
+
+    background-color: #2D3032;
+}
+
+figure img{box-shadow: black 0px 30px 10px; border-bottom-left-radius: 30px; border-bottom-right-radius:30px; }
+figure{
+    margin:0px;
+    padding: 0px;
+    margin-bottom:50px;
+}
+
+
+/*color pallete
+    #7D7F80
+    #D2D3D3
+    #555759
+    #2D3032
+    #9615DB
+*/
+nav{margin-left:auto; margin-right:auto; box-shadow: #9615DB 2px 10px 10px;}
+nav input{font-size: 1.4em; border-style: outset;}
+
+nav input#submit
+{
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-style: outset;
+}
+
+.service{margin:0px;}
+
+.servhead
+{
+    
+    margin-right:auto;
+    margin-left: auto;
+    padding: 10px 20px 10px 20px;
+    
+    width: max-content;
+    background-color: #FFFFFF;
+    
+    color:#7D7F80;
+
+    box-shadow: #9615DB 5px 5px 5px;
+
+    border-radius: 10px;
+}
+.servblock
+{
+    background-image: url(Crystalsbackground2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-color: #FFFFFF;
+    
+    color:#7D7F80;
+    min-height: 20vmax;
+    box-shadow: #9615DB 5px 5px 5px;
+}
+
+
+
+.servdesc
+{
+    max-width: 40%;
+    padding: 20px;
+    margin: 5%;
+    
+    color: #FFFFFF;
+    text-align: center;
+    
+
+    background-color:       #401050;
+
+    border-style: ridge;
+    border-color: #D2D3D3;
+    border-width: 10px;
+
+    box-shadow: #2D3032;
+
+}
+
+#AntiCheat{width:95vmax;}
+
+#PassCheckForm input
+{font-size: 2em;}
