@@ -1,8 +1,10 @@
 *
 {
-    font-family: sans-serif;
+    font-family: monospace;
     font-weight: bold;
 }
+
+
 
 .MainDivisions
 {
@@ -11,7 +13,6 @@
     justify-content: center;
 
     color: #ffffff;
-
     font-size: 17px;
 
     height: 400px;
