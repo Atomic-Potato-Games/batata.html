@@ -1,0 +1,89 @@
+body{
+    margin:0px;
+
+    font-family: sans-serif;
+    color:#D2D3D3;
+
+    background-color: #2D3032;
+}
+
+
+
+/*color pallete
+    #7D7F80
+    #D2D3D3
+    #555759
+    #2D3032
+    #9615DB
+*/
+nav{margin-left:auto; margin-right:auto; box-shadow: #9615DB 2px 10px 10px;}
+nav input{font-size: 1.4em; border-style: outset;}
+
+.servhead
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: max-content;
+    background-color: #FFFFFF;
+    
+    color:#7D7F80;
+
+    box-shadow: #9615DB 5px 5px 5px;
+
+    border-radius: 10px;
+}
+.servblock
+{
+    background-color: #FFFFFF;
+    
+    color:#7D7F80;
+
+    box-shadow: #9615DB 5px 5px 5px;
+}
+.button{
+    font-size:x-large;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    width: 25%;
+    height: fit-content;
+    color: #ffffff;
+    border:none;
+    border-radius: 5%;
+    background-color: #9615DB;
+}
+#representationText{
+    border-radius: 3%;
+    font-size: medium;
+    font-weight:600;
+    color: #ffffff ;
+    background-color: rgba(255, 0, 255, 0.1);
+    width:30vw;
+    padding:3%;
+    
+}
+#divVids{
+    display: flex;
+    column-gap:0.5rem;
+    justify-content: center;
+}
+.redBox{
+    border: 3px ridge red; 
+    width: 25px; 
+    height: 25px; 
+    position: relative; 
+    left: -100px; 
+    top: 230px;
+}
+.bullet{
+    font-size: 50px; 
+    position:relative;
+    left: -500px; 
+    color: red;
+    width:10px;
+}
+#divtxt{
+    display:inline-block;
+    color: white; 
+    margin-left: 34%;
+}
