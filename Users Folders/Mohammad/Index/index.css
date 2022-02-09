@@ -41,7 +41,7 @@ header{
     
 }
 #d3{
-    background-color:#D1E8E2 ;
+    background-color:#e7e7e7 ;
     
     
 }
@@ -106,6 +106,9 @@ header{
     
     height: 100%;
     line-height: .7;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30%;
     
   }
   .secondSideDiv{
