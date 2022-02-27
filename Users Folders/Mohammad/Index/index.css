@@ -16,6 +16,7 @@ body{
     overflow-x: hidden;
     
 }
+
 header{
   background-color: #2C3531;
   height:100px;
@@ -93,7 +94,7 @@ header{
 .divs h1{
   text-align:left;
   padding: 3%;
-  font-size: 3vw;
+  font-size: 6vh;
 }
 .fade {
   
@@ -158,6 +159,9 @@ header{
 #d3 button.firstSideB{
   color:#ffffff;
   background-color: #000000;
+}
+.Under{
+  font-size: 18px;
 }
   button.firstSideB:hover{
       cursor:pointer;

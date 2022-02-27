@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test</title>
+    <link rel="stylesheet" href="anticheat.css">
+</head>
+
+<body>
+
+    <main>
+        <h1 style="text-align: center;">ANTI-CHEAT</h1>
+        <div style="display: block; height: fit-content;">
+
+
+            <div id="divVids">
+                <video video id="superfireratenormal" loop height="270" width="480" style="margin-right:0%;">
+                    <source src=" superfireratenormal.mp4" type="video/mp4">
+                </video>
+                <div id="leftRedBox" class="redBox"></div>
+                <p id="BulletCounterLeft" class="bullet">Time</p>
+                <video id="superfireratehacking" loop height="270" width="480" style="margin-left:0%">
+                    <source src="superfireratehacking.mp4" type="video/mp4">
+                </video>
+                <div id="rightRedBox" class="redBox">
+                </div>
+                <p id="BulletCounterRight" class="bullet">Time
+                </p>
+            </div>
+            <div id="divtxt">
+                <p id="representationText">
+                    The following video is a representation of how our Anti-Cheat system works.
+                    The video on the right is how firing looks like in a normal game. Press the
+                    button below to start the representation.
+                </p>
+                <button button id="showHacksButton" class="button">Next</button>
+                <button button id="showHacksButton1" class="button">Dectect Hacks</button>
+                <button button id="ResetButton" class="button">Reset</button>
+            </div>
+
+        </div>
+    </main>
+    <script src="anticheat.js"></script>
+</body>
+
+</html>

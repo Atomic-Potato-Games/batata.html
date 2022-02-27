@@ -1,90 +1,98 @@
 <!DOCTYPE html>
 <html>
-
     <head>
-        <title>Our Services</title>
-        <meta charset="UTF-8">
-        <meta content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Serv.css">
+        <title>CyberTater :: Products & Services</title>
+        <link rel="stylesheet" href="Services.css">
+        <link rel="icon" href="../Shared Content/icon.ico" type="image/ico">
     </head>
 
     <body>
-        <header style="display: flex; position: sticky; background-color: #000000; height:60px;">
+        <header>
+            Insert header Here
         </header>
 
-        <nav  style="background-color: #000000; padding-bottom: 10px;">
-            <script>
-                function displayService(){
-                    let serviceArr = document.querySelectorAll(".service");
-                    let lenArr = serviceArr.length;
-                    let blockid ="div" + document.querySelector("input#searchbar").value +".service";
-                    console.log(blockid);
-                    if(blockid == "div#ALL.service") for(var i = 0; i<lenArr; i++) serviceArr[i].style.display = "block";
-                    else for(var i = 0; i<lenArr; i++)
-                    {
-                        if(serviceArr[i].id == blockid){serviceArr[i].style.display  = "block"; continue;}
-                        serviceArr[i].style.display = "none";
-                    }
-                }
-            </script>
-            
-            <form>
-                <input type="button" id="ALL" onclick="displayAll()" value="  ">
-                <input type="text" id="searchbar"  name = "ServiceSearch" list="divisions" placeholder="#Service_Name" size = "30">
-                <input type="button" id="submit" onclick="displayService()" value="Search ">
-            </form>
+        <nav>
+            Insert Navigation Here
         </nav>
-
-
-        <figure>
-            <img src="webBackground.gif" width="100%;"> 
-        </figure>
         <main>
-            
-            <div class="service" id="PassCheck">
-                <h1 class="servhead">Unity's Password Strength Test</h1>
-                <div class="servblock">
-                    <form  type="get" name="Password_Strength_Check" id="PassCheckForm" style="margin:5%;">
-                        <input type="text" placeholder="  Enter Password" id="Password" style="border-top-left-radius: 20px; border-bottom-left-radius: 20px;" /> 
-                        <input type="button" id="button" onclick="" value="  Check  "/> <br/>
-                        <meter value="0" min="1" max="4" id="Meter">Password_Strength_Meter</meter>
-                        
-                    </form>
-                    <p class="servdesc">
-                        This is Unity's Advanced Password Strength Check.</br>
-                        It Contain every test a normal test would have.</br>
-                        But, what makes this test superior among</br>
-                        others is this ... that ... and those, too...                
-                    </p>
-                </div>
-            </div>
 
-            <div class="service" id="Hashing">
-                <h1 class="servhead">Hashing Service</h1>
 
-                <div class="servblock">
-                    <form name="Hashing" id="HashingForm">
-                        <input type="password" id="pwd" name="password" />
-                        <input onclick="event.preventDefault();hashingFunction()" type="submit">
-                        <br/>  <input type="text" id="hashpass" name="hashpass" /> 
-                    </form>
-                    <p class="servdesc">
-                        This is Unity's Advanced Password Strength Check.</br>
-                        It Contain every test a normal test would have.</br>
-                        But, what makes this test superior among</br>
-                        others is this ... that ... and those, too...                
-                    </p>
-                </div>
-            </div>
-
-            <div class="service" id="PassGen">
+            <div class="service" id="curtain" style="display:none;" >
                 
-                    <h1 class="servhead">
-                        random password generator
-                    </h1>
+                <div id="welcome">
+                    <img src="assets/Group.png" width="60%">
+                    <h2>Welcome to our<br/> Product & Services page</h2>
+                    <p>
+                        We are proud to show our best products that we have instore.<br/>
+                        Everything from Password Strength Testing Programs to Game Anti-Cheats.<br/>
+                        Engineered by the best to suite your personal and professional needs.<br/>
 
-                <div class="servblock">
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="service" id="passcheck" style="display:none;">
+                
+                <div class="servbody">
+                
+
+                    <input type="password" placeholder="Enter Password" size="40" name="Password" id="Password"/> <br/>
+                    <input type="button" id="button" onclick="" value="  Check  "/> 
+                    <meter value="0" min="1" max="4" id="Meter">Password_Strength_Meter</meter> <br/>
+                    <input type="button" id="button" onclick="" value="   " style="border-radius: 48%;"/>
+                    <meter value="0" min="1" max="4" id="AdvMeter">Advanced_Password_Strength_Meter</meter> <br/>
+                </div>
+
+                <div class="servgap"></div>
+
+                <div class="servdesc">
+                    <h2>Unity's Password Strength Test</h2>
+                    <p>
+                        This is Unity's Advanced Password Strength Check.</br>
+                        It Contain every test a normal test would have.</br>
+                        But, what makes this test superior among</br>
+                        others is this ... that ... and those, too...                
+                    </p>
+                </div>div>
+            </div>
+
+
+
+            <div class="service" id="hash"  style="display:none;">
+                
+            
+                <div class="servbody">
+                    
+                    <form name="Hashing" id="HashingForm">
+                        <h2>Normal Text</h2>
+                        <textarea id="tobehashed" name="unhashed" min-cols="80" cols="80" rows="13">Normal Text Here</textarea>
+                        <input onclick="event.preventDefault();hashingFunction()" type="submit">
+                        <br/>  
+                        <h2>Hashed Text</h2>
+                        <textarea id="hashpass" name="hashpass" cols="80" rows="13">Hashed Text</textarea> 
+                    </form>
+
+                </div>
+
+                <div class="servgap"></div>
+
+                <div class="servdesc">
+                    <h2>Hashing Service</h2>
+                    <p>
+                        This is Unity's Advanced Password Strength Check.</br>
+                        It Contain every test a normal test would have.</br>
+                        But, what makes this test superior among</br>
+                        others is this ... that ... and those, too...                
+                    </p>
+                </div>
+                
+            </div>
+                
+
+            <div class="service" id="pwdgen" style="display:none;">
+                <div class="servbody">
                     <table class="tableOftxt">
 
                         <tr>
@@ -112,7 +120,7 @@
                     </table>
 
 
-                    <div id="button" class="btn1" onclick="genPasswords()">Generate</div>
+                    <input type="button" id="generate" class="btn1" onclick="genPasswords()" value="Generate">
 
 
                     <select name="PasswordLength" id="selectPassLength">
@@ -120,8 +128,15 @@
                         <option value="24">24</option>
                         <option value="32">32</option>
                     </select>
+                </div>
 
-                    <p class="servdesc">
+                <div class="servgap"></div>
+
+                <div class="servdesc">
+                    <h1>
+                        random password generator
+                    </h1>
+                    <p>
                         This is Unity's Advanced Password Strength Check.</br>
                         It Contain every test a normal test would have.</br>
                         But, what makes this test superior among</br>
@@ -129,44 +144,39 @@
                     </p>
                 </div>
             </div>
-            
-            <div class="service" style="display:none" id="AntiCheat">
-                <h1 style="text-align: center;">ANTI-CHEAT</h1>
-                <div style="display: flex; justify-content: space-between">
-                    <div style="padding-right: 10px;">
-                        <p id="representationText" style="width: 320px;">
-                        The following video is a representation of how our Anti-Cheat system works.
-                        The video on the right is how firing looks like in a normal game. Press the 
-                        button below to start the representation.
-                        </p>
-                        <button button id="showHacksButton" style="display: block; margin: 0 auto;">Next</button>
-                        <button button id="showHacksButton1" style="display: block; margin: 0 auto;">Dectect Hacks</button>
-                        <button button id="ResetButton" style="display: block; margin: 0 auto;">Reset</button>
-                    </div>
-                    
-                    <div style="display: flex; align-content: space-between;">
-                        <video video id="superfireratenormal" loop height="270" width="480">
-                            <source src="superfireratenormal.mp4" type="video/mp4">
-                        </video>
-                        <div id="leftRedBox" style="border: 3px ridge red; width: 25px; height: 25px; position: relative; left: -100px; top: 230px;"></div>
-                        <p id="BulletCounterLeft" style="font-size: 50px; position: relative; left: -500px; color: red">Time</p>
-                        <video  id="superfireratehacking" loop height="270" width="480">
-                            <source src="superfireratehacking.mp4" type="video/mp4">
-                        </video>
 
-                        <div id="rightRedBox" style="border: 3px ridge red; width: 25px; height: 25px; position: relative; left: -100px; top: 230px;"></div>
-                        <p id="BulletCounterRight" style="font-size: 50px; position: relative; left: -500px; color: red">Time</p>
-                    </div>
-                    
-                </div>
-            </div>
 
-            <div class="service" id="Encryption">
-                <h1 class="servhead">End-To-End Encrypted Network Services</h1>
+            <div class="service" id="encrypt" style="display:none">
+               
                 
-                <div class="servblock">
-                    <div class="container">
+                <div class="servbody">
+                    <h1>End-To-End Encrypted Network Services</h1>
+                    <div id="server">
                         <div class="phone phone-2" display="inline">
+                            <div class="header header__phone1">
+                            <div class="back-btn phone-2">
+                                <span class="top-line"></span>
+                                <span class="mid-line"></span>
+                                <span class="bottom-line"></span>
+                            </div>
+                            <div class="profile-photo phone-2"></div>
+                            <div>
+                                <h2 class="profile-name phone-2">Server</h2>
+                            </div>
+                            </div>
+                            <div class="chats chats__phone2">
+                            </div>
+                            <div class="text-area text-area__phone1">
+                            </div>
+                            <textarea name="serverlog" id="serverlog" cols="60" rows="30"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="servbody">
+                    <div class="container">
+                        <div class="phone phone-2" display="inline"></div>
                         <div class="header header__phone1">
                             <div class="back-btn phone-2">
                             <span class="top-line"></span>
@@ -179,39 +189,21 @@
                             <div class="active-status phone-2">online</div>
                             </div>
                         </div>
-                        <div class="chats chats__phone1">
-                        </div>
-                        <div class="text-area text-area__phone1">
-                            <input type="textarea" placeholder="Type Message Here" class="message-box"></input>
-                            <button class="send-button">Send</button>
-                        </div>
-                        </div>
-                        <div class="encryptKey" display="inline">
-                        <h2>key</h2>
-                        <input id="0" type="number" value="0" min="0" max="99">
-                        <input id="1" type="number" value="0" min="0" max="99">
-                        <input id="2" type="number" value="0" min="0" max="99">
-                        </div>
-                        <div class="phone phone-2" display="inline">
-                            <div class="header header__phone1">
-                            <div class="back-btn phone-2">
-                                <span class="top-line"></span>
-                                <span class="mid-line"></span>
-                                <span class="bottom-line"></span>
-                            </div>
-                            <div class="profile-photo phone-2"></div>
-                            <div>
-                                <div class="profile-name phone-2">server</div>
-                                <div class="active-status phone-2">online</div>
-                            </div>
-                            </div>
-                            <div class="chats chats__phone2">
-                            </div>
+                        <div>
+                            <div class="chats chats__phone1"></div>
                             <div class="text-area text-area__phone1">
-                            <input type="textarea" placeholder="Type Message Here" class="message-box"></input>
-                            <button class="send-button">Send</button>
+                                <input type="textarea" placeholder="Type Message Here" class="message-box"></input>
+                                <button class="send-button">Send</button>
+                            </div>
+                        
+                            <div class="encryptKey" display="inline">
+                            <h2>key</h2>
+                            <input id="0" type="number" value="0" min="0" max="99">
+                            <input id="1" type="number" value="0" min="0" max="99">
+                            <input id="2" type="number" value="0" min="0" max="99">
                             </div>
                         </div>
+                       
                         <div class="decryptKey" display="inline">
                             <h2>Key</h2>
                             <input id="0" type="number" value="0" min="0" max="99">
@@ -232,8 +224,7 @@
                                     <div class="active-status phone-2">online</div>
                                 </div>
                             </div>
-                            <div class="chats chats__phone3">
-                            </div>
+                            <div class="chats chats__phone3"></div>
 
                             <div class="text-area text-area__phone1">
                                 <input type="textarea" placeholder="Type Message Here" class="message-box"></input>
@@ -241,29 +232,26 @@
                             </div>
                         </div>
                     </div>
-                    <p class="servdesc">
+                </div>
+                
+                <div class="servdesc">
+                    <p>
                         This is Unity's Advanced Password Strength Check.</br>
                         It Contain every test a normal test would have.</br>
                         But, what makes this test superior among</br>
                         others is this ... that ... and those, too...                
                     </p>
                 </div>
-                
             </div>
 
         </main>
-        
-        
 
-        <datalist id="divisions">
-            <option value="#ALL">Display All Services</option>
-            <option value="#PassCheck">Password Strength</option>
-            <option value="#Hashing">Hashing</option>
-            <option value="#PassGen">Password Gen</option>
-            <option value="#AntiCheat">AntiCheat System</option>
-            <option value="#Encryption">End to End Encryption</option>
-        </datalist>
-        <footer>Insert Footer Here</footer>
+        <footer>
+            Insert footer Here
+        </footer>
+
+        <script src="script.js"></script>
+
     </body>
-    
 </html>
+
