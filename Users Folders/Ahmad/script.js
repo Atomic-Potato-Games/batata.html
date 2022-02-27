@@ -238,3 +238,20 @@ messagebox.addEventListener('keydown', function(e) {
   else if(e.keyCode === 13){send(messageText); messageText = [];}
   else{messageText.push(e.key);}
 });
+
+
+
+//Navigation
+function displaydiv(index)
+{
+    let arr = document.querySelectorAll(".service");
+    let len = arr.length;
+
+    let i;
+    for(i = 0; i < len; i++)
+    {
+        arr[i].style.display = "none";
+    }
+    
+    arr[index].style.display = "flex";
+}
