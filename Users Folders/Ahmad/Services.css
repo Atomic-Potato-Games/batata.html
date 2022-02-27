@@ -1,0 +1,67 @@
+body
+{
+    margin:0px;
+
+    font-family: sans-serif;
+    color:#D2D3D3;
+
+    background-color: #2D3032;
+}
+
+/*color pallete
+    
+    
+   
+    #2D3032
+    #9615DB
+    #555759
+    #7D7F80
+    #D2D3D3
+*/
+main
+{
+    background-color: white;
+    min-height:max-content;
+}
+
+fieldset
+{
+    margin: 2%;
+    padding-bottom: 3%;
+}
+
+
+#curtain
+{
+    height: 50vmax;
+
+    background-color: white;
+    background-image: url("assets/webBackground.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#welcome
+{
+    width: 30vmax;
+    padding: 5% 2%;
+    
+    color:#2D3032;
+}
+#welcome img
+{
+    margin-bottom: 10% 0% auto auto;
+}
+#welcome h2
+{
+    text-shadow: 1px 1px 2px #9615DB;
+    
+}
+
+
+
+#PassCheckForm, #Password, #button
+{
+    font-size: 3vh;
+}
