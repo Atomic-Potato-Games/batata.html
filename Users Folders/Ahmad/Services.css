@@ -24,6 +24,24 @@ main
     min-height:max-content;
 }
 
+footer nav
+{
+    display:flex;
+    justify-content: center; 
+    background-color:#D2D3D3;
+    padding:20px;
+    padding-top: 0px;
+}
+
+
+footer nav div
+{
+    padding:10px;
+    border: 2px ridge black;
+
+    background-color: #9615DB;
+}
+
 textarea
 {
     resize: none;
@@ -34,26 +52,13 @@ td input
     font-size: medium;
 }
 
-#curtain
-{
-    height: 50vmax;
-
-    
-
-    background-color: white;
-    background-image: url("assets/webBackground.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
 
 .service
 {
     display: flex;
 
     margin-top: 0.7vmax;
-    margin-bottom: 0.7vmax;
+    
     min-height: 40vmax;
 }
 
@@ -76,6 +81,20 @@ td input
 {
     
     min-width:30%;
+}
+
+
+#curtain
+{
+    height: 40vmax;
+
+
+
+    background-color: white;
+    background-image: url("assets/webBackground.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 
