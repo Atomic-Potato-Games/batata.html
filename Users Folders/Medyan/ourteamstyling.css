@@ -33,7 +33,7 @@
     position: relative;
     margin-top: 100px;
     left: 0%;
-    height: 150px;
+    height: fit-content;
     width: auto;
 
     font-size: 100%;
@@ -42,7 +42,6 @@
     border-style:solid;  
     border-width: thick; 
     border-color: #9615db;
-    word-break: break-word;
 }
 
 .bio

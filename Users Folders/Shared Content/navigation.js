@@ -6,6 +6,7 @@ var navIsOn = false;
 //Top Button
 var topButton =  document.getElementById("topButton");
 
+
 navButton.onclick = function()
 {
     if(!navIsOn)
