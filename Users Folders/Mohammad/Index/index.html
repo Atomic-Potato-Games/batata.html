@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="../../Shared Content/icon.ico" type="image/ico">
+    <link rel="stylesheet" href="../../Shared Content/navigationstyling.css">
     <script src="index.js"></script>
     <title>Home</title>
 
@@ -13,13 +15,23 @@
 
 <body>
 
-    <header>
-        <h1 style="text-align:center;color: antiquewhite;margin: 0%;">
-            CyberHolic
-
-        </h1>
-
+    <header style="display: flex; position: sticky; background-color: #000000;">
+        <a href="../Mohammad/Index/index.html"><img src="../../Shared Content/icon.png" alt="logo"
+                style="height:50px; width: 50px; padding-left: 10px; padding-top: 10px;"></a>
+        <a href="../Mohammad/Index/index.html" style="text-decoration: none;">
+            <h1 id="navheading">CyberTater</h1>
+        </a>
+        <input id="navbutton" type="image" src="../../Shared Content/NavMenuButton.png" height="50px" width="50px">
     </header>
+    <nav id="navigation">
+        <a href="../../Mohammad/Index/index.html" , class="navLinks">Home</a> <br>
+        <a href="../../Ahmad/Services.html" , class="navLinks">Services & Products</a> <br>
+        <a href="../../Medyan/ourteam.html" , class="navLinks">Our Team</a> <br>
+        <a href="../../Majd/about us.html" , class="navLinks">About Us</a> <br>
+        <a href="../../Sirin/index.html" , class="navLinks">Contact Us</a>
+    </nav>
+    <input src="../../Shared Content/UpArrow.png" id="topButton" type="image" height="50px" width="50px"
+        style="z-index: 1;">
 
 
 
@@ -154,12 +166,31 @@
     <div>
 
     </div>
+    <footer
+        style="column-gap: 200px; justify-content: center; position: relative; background-color: #525151; height: 140px; display: flex;">
+        <div>
+            <p style="color: #ffffff; margin: auto;padding-top: 20px;">
+                Copyright &copy; 2022 CyberTater Technologies<br><br><br>
+                "CyberTater", CyberTater logos, and other CyberTater trademarks are trademarks<br>
+                or registered trademarks of CyberTater Technologies or its affiliates in Lebanon and elsewhere.<br>
+                Other names or brands are trademarks of their respective owners.
+            </p>
+        </div>
+        <div style="padding-top: 60px;">
+            <p style="color: #ffffff; margin: 0; padding-bottom: 5px;">Socials:</p>
+            <a href="http://papertoilet.com" target="_blank" style="text-decoration: none;"><img
+                    src="../../Shared Content/linkedin.png" alt="linkedin" style="width: 25px; height: 25px;"></a>
+            <a href="https://thisissand.com" target="_blank" style="text-decoration: none;"><img
+                    src="../../Shared Content/youtube.png" alt="linkedin" style="width: 32px; height: 25px;"></a>
+            <a href="https://onesquareminesweeper.com" target="_blank" style="text-decoration: none;"><img
+                    src="../../Shared Content/facebook.png" alt="linkedin" style="width: 25px; height: 25px;"></a>
+        </div>
+    </footer>
 
 
 
 
-
-
+    <script src="../../Shared Content/navigation.js"></script>
 </body>
 
 </html>
