@@ -13,7 +13,6 @@ main
     justify-content: center;
     width: 90%;
     margin: auto;
-    padding-bottom: 5cm;
 }
 
 .title
@@ -26,6 +25,7 @@ main
 .title-info
 {
 	padding-bottom: 2%;
+    font-size: 15px;
 }
 
 .form
@@ -49,7 +49,7 @@ main
 
 input, textarea
 {
-    color: inherit;
+    color: black;
     width: 100%;
     background-color: transparent;
     border: none;
