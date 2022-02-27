@@ -15,48 +15,243 @@
             Insert Navigation Here
         </nav>
         <main>
-            <div name="curtain" id="curtain" style="display:none;">
+
+
+            <div class="service" id="curtain" style="display:none;" >
                 
                 <div id="welcome">
-                    <img src="assets/Group.png" width="60%%">
+                    <img src="assets/Group.png" width="60%">
                     <h2>Welcome to our<br/> Product & Services page</h2>
                     <p>
-                        
                         We are proud to show our best products that we have instore.<br/>
                         Everything from Password Strength Testing Programs to Game Anti-Cheats.<br/>
-                        Engineered by the best to suite best your personal and professional needs.<br/>
+                        Engineered by the best to suite your personal and professional needs.<br/>
 
                     </p>
                 </div>
 
             </div>
 
-            <div name="passcheck" id="passcheck">
-                <fieldset>
-                    <legend><h2>Unity's Password Strength Test</h2></legend>
-                    <form  type="get" name="Password_Strength_Check" id="PassCheckForm" style="margin:5%;">
-                        <label for="Password">Password:</label>
-                        <input type="password" placeholder="Enter Password" size="40" name="Password" id="Password"/> <br/>
-                        <input type="button" id="button" onclick="" value="  Check  "/> 
-                        <meter value="0" min="1" max="4" id="Meter">Password_Strength_Meter</meter> <br/>
-                        <input type="button" id="button" onclick="" value="   " style="border-radius: 48%;"/>
-                        <meter value="0" min="1" max="4" id="AdvMeter">Advanced_Password_Strength_Meter</meter> <br/>
-                        
-                        <p>
-                            This is Unity's Advanced Password Strength Check.</br>
-                            It Contain every test a normal test would have.</br>
-                            But, what makes this test superior among</br>
-                            others is this ... that ... and those, too...                
-                        </p>
-                        
-                    </form>
-                </fieldset>
-        
+
+            <div class="service" id="passcheck" style="display:none;">
+                
+                <div class="servbody">
+                
+
+                    <input type="password" placeholder="Enter Password" size="40" name="Password" id="Password"/> <br/>
+                    <input type="button" id="button" onclick="" value="  Check  "/> 
+                    <meter value="0" min="1" max="4" id="Meter">Password_Strength_Meter</meter> <br/>
+                    <input type="button" id="button" onclick="" value="   " style="border-radius: 48%;"/>
+                    <meter value="0" min="1" max="4" id="AdvMeter">Advanced_Password_Strength_Meter</meter> <br/>
+                </div>
+
+                <div class="servgap"></div>
+
+                <div class="servdesc">
+                    <h2>Unity's Password Strength Test</h2>
+                    <p>
+                        This is Unity's Advanced Password Strength Check.</br>
+                        It Contain every test a normal test would have.</br>
+                        But, what makes this test superior among</br>
+                        others is this ... that ... and those, too...                
+                    </p>
+                </div>div>
             </div>
+
+
+
+            <div class="service" id="hash"  style="display:none;">
+                
+            
+                <div class="servbody">
+                    
+                    <form name="Hashing" id="HashingForm">
+                        <h2>Normal Text</h2>
+                        <textarea id="tobehashed" name="unhashed" min-cols="80" cols="80" rows="13">Normal Text Here</textarea>
+                        <input onclick="event.preventDefault();hashingFunction()" type="submit">
+                        <br/>  
+                        <h2>Hashed Text</h2>
+                        <textarea id="hashpass" name="hashpass" cols="80" rows="13">Hashed Text</textarea> 
+                    </form>
+
+                </div>
+
+                <div class="servgap"></div>
+
+                <div class="servdesc">
+                    <h2>Hashing Service</h2>
+                    <p>
+                        This is Unity's Advanced Password Strength Check.</br>
+                        It Contain every test a normal test would have.</br>
+                        But, what makes this test superior among</br>
+                        others is this ... that ... and those, too...                
+                    </p>
+                </div>
+                
+            </div>
+                
+
+            <div class="service" id="pwdgen" style="display:none;">
+                <div class="servbody">
+                    <table class="tableOftxt">
+
+                        <tr>
+                            <td><input type="text" placeholder="Create Password" id="password" readonly></td>
+                        </tr>
+
+
+                        <tr>
+                            <td><input type="text" placeholder="Create Password" id="password1" onmouseover="appear(password1)"
+                                    readonly></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="text" placeholder="Create Password" id="password2" readonly></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="text" placeholder="Create Password" id="password3" readonly></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="text" placeholder="Create Password" id="password4" readonly></td>
+                        </tr>
+
+                    </table>
+
+
+                    <input type="button" id="generate" class="btn1" onclick="genPasswords()" value="Generate">
+
+
+                    <select name="PasswordLength" id="selectPassLength">
+                        <option value="12" selected="selected">12</option>
+                        <option value="24">24</option>
+                        <option value="32">32</option>
+                    </select>
+                </div>
+
+                <div class="servgap"></div>
+
+                <div class="servdesc">
+                    <h1>
+                        random password generator
+                    </h1>
+                    <p>
+                        This is Unity's Advanced Password Strength Check.</br>
+                        It Contain every test a normal test would have.</br>
+                        But, what makes this test superior among</br>
+                        others is this ... that ... and those, too...                
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="service" id="encrypt" style="display:none">
+               
+                
+                <div class="servbody">
+                    <h1>End-To-End Encrypted Network Services</h1>
+                    <div id="server">
+                        <div class="phone phone-2" display="inline">
+                            <div class="header header__phone1">
+                            <div class="back-btn phone-2">
+                                <span class="top-line"></span>
+                                <span class="mid-line"></span>
+                                <span class="bottom-line"></span>
+                            </div>
+                            <div class="profile-photo phone-2"></div>
+                            <div>
+                                <h2 class="profile-name phone-2">Server</h2>
+                            </div>
+                            </div>
+                            <div class="chats chats__phone2">
+                            </div>
+                            <div class="text-area text-area__phone1">
+                            </div>
+                            <textarea name="serverlog" id="serverlog" cols="60" rows="30"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="servbody">
+                    <div class="container">
+                        <div class="phone phone-2" display="inline"></div>
+                        <div class="header header__phone1">
+                            <div class="back-btn phone-2">
+                            <span class="top-line"></span>
+                            <span class="mid-line"></span>
+                            <span class="bottom-line"></span>
+                            </div>
+                            <div class="profile-photo phone-2"></div>
+                            <div>
+                            <div class="profile-name phone-2">Bob</div>
+                            <div class="active-status phone-2">online</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="chats chats__phone1"></div>
+                            <div class="text-area text-area__phone1">
+                                <input type="textarea" placeholder="Type Message Here" class="message-box"></input>
+                                <button class="send-button">Send</button>
+                            </div>
+                        
+                            <div class="encryptKey" display="inline">
+                            <h2>key</h2>
+                            <input id="0" type="number" value="0" min="0" max="99">
+                            <input id="1" type="number" value="0" min="0" max="99">
+                            <input id="2" type="number" value="0" min="0" max="99">
+                            </div>
+                        </div>
+                       
+                        <div class="decryptKey" display="inline">
+                            <h2>Key</h2>
+                            <input id="0" type="number" value="0" min="0" max="99">
+                            <input id="1" type="number" value="0" min="0" max="99">
+                            <input id="2" type="number" value="0" min="0" max="99">
+                        </div>
+                            
+                        <div class="phone phone-2" display="inline">
+                            <div class="header header__phone1">
+                                <div class="back-btn phone-2">
+                                <span class="top-line"></span>
+                                <span class="mid-line"></span>
+                                <span class="bottom-line"></span>
+                                </div>
+                                <div class="profile-photo phone-2"></div>
+                                <div>
+                                    <div class="profile-name phone-2">Ashley</div>
+                                    <div class="active-status phone-2">online</div>
+                                </div>
+                            </div>
+                            <div class="chats chats__phone3"></div>
+
+                            <div class="text-area text-area__phone1">
+                                <input type="textarea" placeholder="Type Message Here" class="message-box"></input>
+                                <button class="send-button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="servdesc">
+                    <p>
+                        This is Unity's Advanced Password Strength Check.</br>
+                        It Contain every test a normal test would have.</br>
+                        But, what makes this test superior among</br>
+                        others is this ... that ... and those, too...                
+                    </p>
+                </div>
+            </div>
+
         </main>
 
         <footer>
             Insert footer Here
         </footer>
+
+        <script src="script.js"></script>
+
     </body>
 </html>
+

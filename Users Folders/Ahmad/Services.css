@@ -24,16 +24,21 @@ main
     min-height:max-content;
 }
 
-fieldset
+textarea
 {
-    margin: 2%;
-    padding-bottom: 3%;
+    resize: none;
 }
 
+td input
+{
+    font-size: medium;
+}
 
 #curtain
 {
     height: 50vmax;
+
+    
 
     background-color: white;
     background-image: url("assets/webBackground.gif");
@@ -42,12 +47,47 @@ fieldset
     background-size: contain;
 }
 
+
+.service
+{
+    display: flex;
+
+    margin-top: 0.7vmax;
+    margin-bottom: 0.7vmax;
+    min-height: 40vmax;
+}
+
+
+
+.servbody
+{
+    padding: 3%;
+}
+
+.servgap
+{
+    min-width: 10%;
+    max-width: 10%;
+
+    background-color: #2D3032;
+}
+
+.servdesc
+{
+    
+    min-width:30%;
+}
+
+
 #welcome
 {
     width: 30vmax;
+    
     padding: 5% 2%;
     
+
     color:#2D3032;
+
 }
 #welcome img
 {
@@ -64,4 +104,10 @@ fieldset
 #PassCheckForm, #Password, #button
 {
     font-size: 3vh;
+}
+
+#server
+{
+    padding: 20px;
+    border: 2px dashed black;
 }
