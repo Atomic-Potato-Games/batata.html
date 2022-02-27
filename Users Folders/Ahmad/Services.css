@@ -9,18 +9,41 @@ body
 }
 
 /*color pallete
-    
-    
-   
     #2D3032
     #9615DB
     #555759
     #7D7F80
     #D2D3D3
 */
+nav ul
+{
+    width:250px;
+    height: 50vmax;
+    
+    float: left;
+    padding-top: 5%;
+    margin-top: 0px;
+}
+
+nav ul li
+{
+    width: 200px;
+    
+    margin: 0.5%;
+    margin-bottom: 10%;
+    padding: 5%;
+
+    border: 1px ridge white;
+
+    box-shadow: 3px 3px 3px black;
+
+    font-size: 1.2em;
+    
+}
+
+
 main
 {
-    background-color: white;
     min-height:max-content;
 }
 
@@ -55,17 +78,13 @@ td input
 
 .service
 {
-    display: flex;
-
-    margin-top: 0.7vmax;
-    
-    min-height: 40vmax;
+    display: flex;    
+    min-height: 50vmax;
 }
-
-
 
 .servbody
 {
+    background-color: white;
     padding: 3%;
 }
 
@@ -79,8 +98,36 @@ td input
 
 .servdesc
 {
-    
+    background-color: white;
     min-width:30%;
+}
+
+.button{
+    font-size:x-large;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    width: 25%;
+    height: fit-content;
+    color: #ffffff;
+    border:none;
+    border-radius: 5%;
+    background-color: #9615DB;
+}
+.redBox{
+    border: 3px ridge red; 
+    width: 25px; 
+    height: 25px; 
+    position: relative; 
+    left: -100px; 
+    top: 230px;
+}
+.bullet{
+    font-size: 50px; 
+    position:relative;
+    left: -500px; 
+    color: red;
+    width:10px;
 }
 
 
@@ -97,16 +144,15 @@ td input
     background-size: contain;
 }
 
-
 #welcome
 {
-    width: 30vmax;
+    width: 20vmax;
     
     padding: 5% 2%;
     
 
     color:#2D3032;
-
+    text-align: center;
 }
 #welcome img
 {
@@ -118,8 +164,6 @@ td input
     
 }
 
-
-
 #PassCheckForm, #Password, #button
 {
     font-size: 3vh;
@@ -129,4 +173,54 @@ td input
 {
     padding: 20px;
     border: 2px dashed black;
+}
+#server label
+{
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+#cheat
+{
+    flex-direction: column;
+}
+#cheat h1
+{
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.servblock
+{
+    background-color: #FFFFFF;
+    
+    color:#7D7F80;
+
+    box-shadow: #9615DB 5px 5px 5px;
+}
+
+#representationText{
+    border-radius: 3%;
+    font-size: medium;
+    font-weight:600;
+    color: #ffffff ;
+    background-color: rgba(255, 0, 255, 0.1);
+    width:30vw;
+    padding:3%;
+    
+}
+#divVids{
+    display: flex;
+    column-gap:0.5rem;
+    justify-content: center;
+}
+#divVids video
+{
+    border: 2px solid #9615DB;
 }

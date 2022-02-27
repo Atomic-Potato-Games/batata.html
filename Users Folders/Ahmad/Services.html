@@ -24,17 +24,27 @@
         <input src="../Shared Content/UpArrow.png" id="topButton" type="image" height="50px" width="50px" style="z-index: 1;">
     
         <!-- REMEMBER TO KEEP THIS AT THE BOTTOM OF YOUR BODY ELEMENT-->
-        <script src="../Shared Content/navigation.js"></script>
+        <nav>
+            <ul>
+                <li onclick="displaydiv(0)" >Welcome</li>
+                <li onclick="displaydiv(1)">Password Strength Test</li>
+                <li onclick="displaydiv(2)">Hashing Station</div>
+                <li onclick="displaydiv(3)">Password Generation</li>
+                <li onclick="displaydiv(4)">Anti-cheat </li>
+                <li onclick="displaydiv(5)">End to End Encryption</li>
+            </ul>
+        </nav>
+
+        
         <main>
             
             <div class="service" id="curtain">
                 
                 <div id="welcome">
-                    <img src="assets/Group.png" width="60%">
+                    <img src="assets/Group.png" width="100%">
                     <h2>Welcome to our<br/> Product & Services page</h2>
                     <p>
-                        We are proud to show our best products that we have instore.<br/>
-                        Everything from Password Strength Testing Programs to Game Anti-Cheats.<br/>
+                        
                         Engineered by the best to suite your personal and professional needs.<br/>
 
                     </p>
@@ -155,6 +165,39 @@
                 </div>
             </div>
 
+            <div class="service" id="cheat" style="display:none">
+                <h1 style="text-align: center; font-size: 3em;">ANTI-CHEAT</h1>    
+                <div style="display: flex; flex-direction: column; align-items: center; height: fit-content;">
+                    
+
+                    <div id="divVids">
+                        <video video id="superfireratenormal" loop height="270" width="480" style="margin-right:0%;">
+                            <source src="assets/superfireratenormal.mp4" type="video/mp4">
+                        </video>
+                        <div id="leftRedBox" class="redBox"></div>
+                        <p id="BulletCounterLeft" class="bullet">Time</p>
+                        <video id="superfireratehacking" loop height="270" width="480" style="margin-left:0%">
+                            <source src="assets/superfireratehacking.mp4" type="video/mp4">
+                        </video>
+                        <div id="rightRedBox" class="redBox">
+                        </div>
+                        <p id="BulletCounterRight" class="bullet">Time
+                        </p>
+                    </div>
+
+                    
+                    <p id="representationText">
+                        The following video is a representation of how our Anti-Cheat system works.
+                        The video on the right is how firing looks like in a normal game. Press the
+                        button below to start the representation.
+                    </p>
+                    <button button id="showHacksButton" class="button">Next</button>
+                    <button button id="showHacksButton1" class="button">Dectect Hacks</button>
+                    <button button id="ResetButton" class="button">Reset</button>
+                    
+
+                </div>
+            </div>
 
             <div class="service" id="encrypt" style="display:none">
                
@@ -170,8 +213,9 @@
                                 <span class="bottom-line"></span>
                             </div>
                             <div class="profile-photo phone-2"></div>
-                            <div>
-                                <h2 class="profile-name phone-2">Server</h2>
+                            <div style="display:flex; align-items: center;">
+                                <img src="assets/server.gif" height="40px">
+                                <h2 class="profile-name phone-2">&nbsp;Server</h2>
                             </div>
                             </div>
                             <div class="chats chats__phone2">
@@ -254,26 +298,19 @@
                 </div>
             </div>
 
+            
+
+
         </main>
 
-
-        
 
         <footer>
             
             
-            <nav>
-                
-                <div onclick="displaydiv(0)" >Welcome</div>
-                <div onclick="displaydiv(1)">Password Strength Test</div>
-                <div onclick="displaydiv(2)">Hashing</div>
-                <div onclick="displaydiv(3)">Password Generation</div>
-                <div onclick="displaydiv(4)">Anti-cheat</div>
-                <div onclick="displaydiv(5)"">End to End Encryption</div>
-            </nav>
+            
             
         </footer>
-
+        <script src="../Shared Content/navigation.js"></script>
         <script src="script.js"></script>
 
     </body>
