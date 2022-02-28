@@ -42,16 +42,20 @@
             
             <div class="service" id="curtain">
                 
+                
                 <div id="welcome">
+                    <!--
                     <img src="assets/Group.png" width="100%">
+
                     <h2>Welcome to our<br/> Product & Services page</h2>
                     <p>
                         
                         Engineered by the best to suite your personal and professional needs.<br/>
 
                     </p>
-                </div>
+            -->
 
+                </div>
             </div>
 
 
@@ -125,10 +129,12 @@
             
                 <div class="servbody">
                     
-                    <form name="Hashing" id="HashingForm">
+                    <form name="Hashing" id="HashingForm" style="display: flex; flex-direction: column; justify-content: center;">
                         <h2>Normal Text</h2>
                         <textarea id="tobehashed" name="unhashed" placeholder="Enter Normal Text Here" cols="70" rows="13"></textarea>
                         <input onclick="event.preventDefault();hashingFunction()" type="submit" id="HashB" value="#&nbsp;#&nbsp;#&nbsp;#&nbsp;# Hash #&nbsp;#&nbsp;#&nbsp;#&nbsp;#">
+
+                        
                         <br/>  
                         <h2>Hashed Text</h2>
                         <textarea id="hashpass" name="hashpass" placeholder="###&nbsp;Hashed Text&nbsp;###" cols="70" rows="13"></textarea> 
@@ -167,7 +173,7 @@
             </div>
                 
 
-            <div class="service" id="pwdgen" style="display:flex;">
+            <div class="service" id="pwdgen" style="display:none;">
                 
 
                 <div class="servbody" style="background-color:transparent; display:flex; flex-direction: column; align-items: center;">
@@ -271,7 +277,7 @@
                 </div>
             </div>
 
-            <div class="service" id="encrypt" style="display:none; flex-direction: column; align-items: center; background-image: url(assets/EndtoEnd.gif); background-repeat: no-repeat; background-size: 100%;">
+            <div class="service" id="encrypt" style="display:none; flex-direction: column; align-items: center; background-image: url(assets/EndtoEnd.gif); background-repeat: no-repeat; background-size: cover;">
                 
                 <div style="display: flex;">
                     <div class="servbody" style="color: #2D3032; ">
@@ -377,7 +383,7 @@
         </main>
 
 
-        <footer style="column-gap: 200px; justify-content: center; position: relative; background-color: #000000; height: 175px; display: flex;">
+        <footer style="column-gap: 200px; justify-content: center; position: relative; background-color: #000000; height: 175px; display: flex; clear: left;">
             <div>
                 <p style="color: #ffffff; margin: auto;padding-top: 30px;">
                     Copyright &copy; 2022 CyberTater Technologies<br><br><br>

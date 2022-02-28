@@ -18,7 +18,7 @@ body
 nav ul
 {
     width:250px;
-    height: 50vmax;
+    height: 25vmax;
     
     list-style-type: square;
 
@@ -244,7 +244,7 @@ h1.servheader
 
 
     background-color: white;
-    background-image: url("assets/webBackground.gif");
+    background-image: url("assets/bg3.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -304,10 +304,16 @@ h1.servheader
 
 #representationText{
     border-radius: 3%;
+    padding-left: 5%;
+    border-radius:5%;
+    border: 6px ridge #9615DB;
+    border-top:0;
+    border-bottom:0;
+    
     font-size: medium;
     font-weight:600;
     color: #ffffff ;
-    background-color: rgba(255, 0, 255, 0.1);
+    background-color: rgba(150, 21, 219, .1);
     width:30vw;
     padding:3%;
     
