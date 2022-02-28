@@ -222,7 +222,7 @@
             </div>
 
             <div class="service" id="cheat" style="display:none">
-                <h1 style="text-align: center; font-size: 3em;">ANTI-CHEAT</h1>    
+                <h1 style="color:#D2D3D3 ;text-align: center; font-size: 3em;">ANTI-CHEAT</h1>    
                 <div style="display: flex; flex-direction: column; align-items: center; height: fit-content;">
                     
 
@@ -255,73 +255,34 @@
                 </div>
             </div>
 
-            <div class="service" id="encrypt" style="display:none">
-               
+            <div class="service" id="encrypt" style="display:none; flex-direction: column; align-items: center; background-image: url(assets/EndtoEnd.gif); background-repeat: no-repeat; background-size: 100%;">
                 
-                <div class="servbody">
-                    <h1>End-To-End Encrypted Network Services</h1>
-                    <div id="server">
-                        <div class="phone phone-2" display="inline">
-                            <div class="header header__phone1">
-                            <div class="back-btn phone-2">
-                                <span class="top-line"></span>
-                                <span class="mid-line"></span>
-                                <span class="bottom-line"></span>
+                <div style="display: flex;">
+                    <div class="servbody" style="color: #2D3032; ">
+                        <h1 class="servheader">End-To-End Encrypted Network Services</h1>
+                        <div id="server" style="border-color: #9615db; background-color: #ffffff;">
+                            <div class="phone phone-2" display="inline" style="min-height: 500px;  max-height: fit-content;">
+                                <div class="header header__phone1">
+                                <div class="back-btn phone-2">
+                                    <span class="top-line"></span>
+                                    <span class="mid-line"></span>
+                                    <span class="bottom-line"></span>
+                                </div>
+                                <div class="profile-photo phone-2"></div>
+                                <div style="display:flex; align-items: center;">
+                                    <img src="assets/server.gif" height="40px">
+                                    <h2 class="profile-name phone-2">&nbsp;Server</h2>
+                                </div>
+                                </div>
+                                <div class="chats chats__phone2" style="border-style: solid; border-color: #9615db; padding-left: 5px; padding-top: 10px; padding-bottom: 10px; color: #2D3032;">
+                                </div>
                             </div>
-                            <div class="profile-photo phone-2"></div>
-                            <div style="display:flex; align-items: center;">
-                                <img src="assets/server.gif" height="40px">
-                                <h2 class="profile-name phone-2">&nbsp;Server</h2>
-                            </div>
-                            </div>
-                            <div class="chats chats__phone2">
-                            </div>
-                            <div class="text-area text-area__phone1">
-                            </div>
-                            <textarea name="serverlog" id="serverlog" cols="60" rows="30"></textarea>
                         </div>
                     </div>
-                </div>
 
-
-                <div class="servbody">
-                    <div class="container">
-                        <div class="phone phone-2" display="inline"></div>
-                        <div class="header header__phone1">
-                            <div class="back-btn phone-2">
-                            <span class="top-line"></span>
-                            <span class="mid-line"></span>
-                            <span class="bottom-line"></span>
-                            </div>
-                            <div class="profile-photo phone-2"></div>
-                            <div>
-                            <div class="profile-name phone-2">Bob</div>
-                            <div class="active-status phone-2">online</div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="chats chats__phone1"></div>
-                            <div class="text-area text-area__phone1">
-                                <input type="textarea" placeholder="Type Message Here" class="message-box"></input>
-                                <button class="send-button">Send</button>
-                            </div>
-                        
-                            <div class="encryptKey" display="inline">
-                            <h2>key</h2>
-                            <input id="0" type="number" value="0" min="0" max="99">
-                            <input id="1" type="number" value="0" min="0" max="99">
-                            <input id="2" type="number" value="0" min="0" max="99">
-                            </div>
-                        </div>
-                       
-                        <div class="decryptKey" display="inline">
-                            <h2>Key</h2>
-                            <input id="0" type="number" value="0" min="0" max="99">
-                            <input id="1" type="number" value="0" min="0" max="99">
-                            <input id="2" type="number" value="0" min="0" max="99">
-                        </div>
-                            
-                        <div class="phone phone-2" display="inline">
+                    <div class="servbody">
+                        <div class="container" style="width: 200px; margin-top: 150px; padding-left:20px; padding-right: 20px; border-style: solid; border-color: #9615db; background-color: #ffffff;">
+                            <div class="phone phone-2" display="inline"></div>
                             <div class="header header__phone1">
                                 <div class="back-btn phone-2">
                                 <span class="top-line"></span>
@@ -329,27 +290,67 @@
                                 <span class="bottom-line"></span>
                                 </div>
                                 <div class="profile-photo phone-2"></div>
-                                <div>
-                                    <div class="profile-name phone-2">Ashley</div>
-                                    <div class="active-status phone-2">online</div>
+                                <div style="padding-top: 25px; padding-bottom: 15px">
+                                    <div class="profile-name phone-2" style="color: #2D3032;">Mr. Potato</div>
+                                    <div class="active-status phone-2" style="color:#00ff15; font-size: 10px;"">Online</div>
                                 </div>
                             </div>
-                            <div class="chats chats__phone3"></div>
+                            <div>
+                                <div class="chats chats__phone1" style="border-style: solid; border-color: #9615db; padding-left: 5px; padding-top: 10px; padding-bottom: 10px; color: #2D3032;"></div>
+                                <div class="text-area text-area__phone1" style="padding-top: 10px;">
+                                    <input type="textarea" placeholder="Type a message" class="message-box"></input>
+                                </div>
+                            
+                                <div class="encryptKey" display="inline">
+                                    <p style="text-align: right; color: #2D3032;">
+                                    Key 
+                                    <input id="0" type="number" value="0" min="0" max="99" style="border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
+                                    <input id="1" type="number" value="0" min="0" max="99" style="border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
+                                    <input id="2" type="number" value="0" min="0" max="99" style="border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
+                                    </p>
+                                </div>
+                            </div>
+                            <br/>
+                            <hr/>
+                                
+                            <div class="phone phone-2" display="inline">
+                                <div class="header header__phone1">
+                                    <div class="back-btn phone-2">
+                                    <span class="top-line"></span>
+                                    <span class="mid-line"></span>
+                                    <span class="bottom-line"></span>
+                                    </div>
+                                    <div class="profile-photo phone-2"></div>
+                                    <div style="padding-top: 25px; padding-bottom: 15px;">
+                                        <div class="profile-name phone-2" style="color: #2D3032;">Ms. Potato</div>
+                                        <div class="active-status phone-2" style="color:#00ff15; font-size: 10px;">Online</div>
+                                    </div>
+                                </div>
+                                <div class="chats chats__phone3" style="border-style: solid; border-color: #9615db; padding-left: 5px; padding-top: 10px; padding-bottom: 10px; color: #000000;"></div>
 
-                            <div class="text-area text-area__phone1">
-                                <input type="textarea" placeholder="Type Message Here" class="message-box"></input>
-                                <button class="send-button">Send</button>
+                                <div class="text-area text-area__phone1" style="padding-top: 10px;">
+                                    <input type="textarea" placeholder="Type a message" class="message-box"></input>
+                                </div>
+                            </div>
+
+                            <div class="decryptKey" display="inline">
+                                <p style="text-align: right; color: #2D3032;">
+                                Key 
+                                <input id="0" type="number" value="0" min="0" max="99" style="border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
+                                <input id="1" type="number" value="0" min="0" max="99" style="border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
+                                <input id="2" type="number" value="0" min="0" max="99" style="border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="servdesc">
-                    <p>
-                        This is Unity's Advanced Password Strength Check.</br>
-                        It Contain every test a normal test would have.</br>
-                        But, what makes this test superior among</br>
-                        others is this ... that ... and those, too...                
+
+                <div class="servdesc" style=" padding:20px;width: 200px; border-style: solid; border-color: #9615db;">
+                    <p style="text-align: center; color: #2D3032;">
+                        This is CyberTater's representation of how<br/> <span style="color: #9615db;">End-To-End</span></br>
+                        messaging works.<br/> It is essential to know where your data is going,<br>
+                        and it's better to have it in safe hands.<br/>
+                        You can <a href="../Sirin/contact.html" style="color:#9615db">contact us</a> directly to get the best offers.  
                     </p>
                 </div>
             </div>
