@@ -20,6 +20,8 @@ nav ul
     width:250px;
     height: 50vmax;
     
+    list-style-type: square;
+
     float: left;
     padding-top: 5%;
     margin-top: 0px;
@@ -38,9 +40,13 @@ nav ul li
     box-shadow: 3px 3px 3px black;
 
     font-size: 1.2em;
-    
 }
 
+nav ul li:hover
+{
+    cursor:pointer;
+    background-color: #210530;
+}
 
 main
 {
@@ -54,6 +60,39 @@ footer nav
     background-color:#D2D3D3;
     padding:20px;
     padding-top: 0px;
+}
+
+hr
+{
+    width:70%;
+}
+
+
+.meter
+{
+    display:none;
+}
+
+input#Password
+{
+    border: none;
+    border-bottom: 3px solid #2D3032;
+}
+input#Password:focus
+{
+    border: none;
+    border-top:  3px solid #210530;
+    border-bottom: 3px solid #2D3032;
+}
+
+input#passcheck_button
+{
+
+    border: 1px solid #9615DB;
+}
+input#passcheck_button:hover
+{
+    border: 2px ridge #a600ff;
 }
 
 
@@ -80,6 +119,7 @@ td input
 {
     display: flex;    
     min-height: 50vmax;
+    color:#2D3032;
 }
 
 .servbody
@@ -164,10 +204,11 @@ td input
     
 }
 
-#PassCheckForm, #Password, #button
+#Password, #button
 {
     font-size: 3vh;
 }
+
 
 #server
 {
@@ -224,3 +265,5 @@ td input
 {
     border: 2px solid #9615DB;
 }
+
+

@@ -14,6 +14,7 @@
             <a href="../Mohammad/Index/index.html" style="text-decoration: none;"><h1 id="navheading">CyberTater</h1></a>
             <input id="navbutton" type="image" src="../Shared Content/NavMenuButton.png" height="50px" width="50px">
         </header>
+
         <nav id = "navigation">
             <a href="../Mohammad/Index/index.html", class="navLinks">Home</a> <br>
             <a href="../Ahmad/Services.html", class="navLinks">Services & Products</a> <br>
@@ -21,12 +22,13 @@
             <a href="../Majd/about us.html", class="navLinks">About Us</a> <br>
             <a href="../Sirin/index.html", class="navLinks">Contact Us</a>
         </nav>
+
         <input src="../Shared Content/UpArrow.png" id="topButton" type="image" height="50px" width="50px" style="z-index: 1;">
     
         <!-- REMEMBER TO KEEP THIS AT THE BOTTOM OF YOUR BODY ELEMENT-->
         <nav>
             <ul>
-                <li onclick="displaydiv(0)" >Welcome</li>
+                <li onclick="displaydiv(0)">Welcome</li>
                 <li onclick="displaydiv(1)">Password Strength Test</li>
                 <li onclick="displaydiv(2)">Hashing Station</div>
                 <li onclick="displaydiv(3)">Password Generation</li>
@@ -56,26 +58,34 @@
             <div class="service" id="passcheck" style="display:none;">
                 
                 <div class="servbody">
-                
+                    <h1>Unity's Password Strength Test</h1>
 
-                    <input type="password" placeholder="Enter Password" size="40" name="Password" id="Password"/> <br/>
-                    <input type="button" id="button" onclick="" value="  Check  "/> 
-                    <meter value="0" min="1" max="4" id="Meter">Password_Strength_Meter</meter> <br/>
-                    <input type="button" id="button" onclick="" value="   " style="border-radius: 48%;"/>
-                    <meter value="0" min="1" max="4" id="AdvMeter">Advanced_Password_Strength_Meter</meter> <br/>
+                    <input type="password" placeholder="Enter Password" size="40" name="Password" id="Password"/> <br/><br/>
+                    <input type="button" id="passcheck_button" onclick="setMeter()" value=" Check "/>
+                    <p class="meter">No Password!<p>
+                    <p class="meter">Weak</p>
+                    <p class="meter">Medium</p>
+                    <p class="meter">Strong</p>
+                    <p class="meter">Fortified</p>
+                    <p class="meter">Insane!!</p>
+                    <p class="meter" style="display:inline">[ The Strength of the Password ]</p>
+
+                    <br/>
+                    <br/>
+                    <hr/>
+                    <br/>
+
+                    <div class="servdesc">
+                        <p>
+                            This is Unity's Advanced Password Strength Check.</br>
+                            It Contain every test a normal test would have.</br>
+                            But, what makes this test superior among</br>
+                            others is this ... that ... and those, too...
+                        </p>
+                    </div>
+
+                    
                 </div>
-
-                <div class="servgap"></div>
-
-                <div class="servdesc">
-                    <h2>Unity's Password Strength Test</h2>
-                    <p>
-                        This is Unity's Advanced Password Strength Check.</br>
-                        It Contain every test a normal test would have.</br>
-                        But, what makes this test superior among</br>
-                        others is this ... that ... and those, too...                
-                    </p>
-                </div>div>
             </div>
 
 
@@ -310,6 +320,7 @@
             
             
         </footer>
+        <script src="Index.js"></script>
         <script src="../Shared Content/navigation.js"></script>
         <script src="script.js"></script>
 
