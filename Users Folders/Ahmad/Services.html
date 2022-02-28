@@ -167,58 +167,74 @@
             </div>
                 
 
-            <div class="service" id="pwdgen" style="display:none;">
-                <div class="servbody">
-                    <table class="tableOftxt">
+            <div class="service" id="pwdgen" style="display:flex;">
+                
 
+                <div class="servbody" style="background-color:transparent; display:flex; flex-direction: column; align-items: center;">
+                    
+                    <h1 class="servheader">Random Password Generator</h1>
+                    <div class="servdesc" id="passGenText" >
+                        <p>
+                            Generate the password that suites you best.<br/>
+                            With this Password Generator, get a strong easy to memorize password in less than seconds.<br/>
+                            No need to think of the password, we got you covered.<br/>
+                            <br/>
+                            How to use:
+                            <ol>
+                                <li>Select one of the length option below</li>
+                                <li>Press the "Generate" button</li>
+                            </ol>
+                            We'll generate it for you...
+                        </p>
+                    </div>
+                    
+
+                    <img src="assets/Counter.gif" width="100%" style="border-radius:2%; margin-top:30px; box-shadow: 1px 3px 6px white ;">
+                </div>
+    
+                
+    
+                <div class="servbody" id="box"  style="display:flex;flex-direction: column; align-items: center;">
+                    <table class="tableOftxt" id="generateTable">
+    
                         <tr>
-                            <td><input type="text" placeholder="Create Password" id="password" readonly></td>
+                            <td><input type="text" placeholder="Password Slot" id="password" readonly></td>
                         </tr>
-
-
+    
+    
                         <tr>
-                            <td><input type="text" placeholder="Create Password" id="password1" onmouseover="appear(password1)"
-                                    readonly></td>
+                            <td><input type="text" placeholder="Password Slot" id="password1"
+                                    onmouseover="appear(password1)" readonly></td>
                         </tr>
-
+    
                         <tr>
-                            <td><input type="text" placeholder="Create Password" id="password2" readonly></td>
+                            <td><input type="text" placeholder="Password Slot" id="password2" readonly></td>
                         </tr>
-
+    
                         <tr>
-                            <td><input type="text" placeholder="Create Password" id="password3" readonly></td>
+                            <td><input type="text" placeholder="Password Slot" id="password3" readonly></td>
                         </tr>
-
+    
                         <tr>
-                            <td><input type="text" placeholder="Create Password" id="password4" readonly></td>
+                            <td><input type="text" placeholder="Password Slot" id="password4" readonly></td>
                         </tr>
-
+    
                     </table>
-
-
-                    <input type="button" id="generate" class="btn1" onclick="genPasswords()" value="Generate">
-
-
-                    <select name="PasswordLength" id="selectPassLength">
+    
+    
+                    <input type="button" id="btngenerate" class="btn1" onclick="genPasswords()" value="Generate">
+    
+                    <select name="PasswordLength" id="selectPassLength" >
+    
                         <option value="12" selected="selected">12</option>
                         <option value="24">24</option>
                         <option value="32">32</option>
+    
                     </select>
+    
+    
                 </div>
-
-                <div class="servgap"></div>
-
-                <div class="servdesc">
-                    <h1>
-                        random password generator
-                    </h1>
-                    <p>
-                        This is Unity's Advanced Password Strength Check.</br>
-                        It Contain every test a normal test would have.</br>
-                        But, what makes this test superior among</br>
-                        others is this ... that ... and those, too...                
-                    </p>
-                </div>
+    
             </div>
 
             <div class="service" id="cheat" style="display:none">

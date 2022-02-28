@@ -43,7 +43,7 @@
 
     <main>
 
-        <div class="service" id="curtain">
+        <div class="service" id="curtain" style="display:none;">
 
             <div id="welcome">
                 <img src="assets/Group.png" width="100%">
@@ -117,7 +117,7 @@
         </div>
 
         <!-------------------------------------------------------------------------------------------->
-        <div class="service" id="pwdgen" style="display:none;">
+        <div class="service" id="pwdgen" style="display:flex;">
             <div class="servdesc" id="passGenText">
                 <h1>
                     Random Password Generator
@@ -164,9 +164,11 @@
                 <input type="button" id="btngenerate" class="btn1" onclick="genPasswords()" value="Generate">
 
                 <select name="PasswordLength" id="selectPassLength">
+
                     <option value="12" selected="selected">12</option>
                     <option value="24">24</option>
                     <option value="32">32</option>
+
                 </select>
 
 
