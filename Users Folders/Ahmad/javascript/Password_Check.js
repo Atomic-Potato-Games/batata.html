@@ -47,23 +47,3 @@ function setMeter()
     if(meter == 5){getElementById("Password").style.border_top.color = "#9615DB"}
     if(meter == 5){getElementById("Password").style.border_top.color = "yellow"}
 }
-
-function show_more()
-{
-    
-    let arr = document.getElementsByClassName("more");
-
-    for(let i = 0; i < arr.length; i++)
-    arr[i].style.display="block";
-    document.getElementById("moreB").style.display="none";
-}
-function show_less()
-{
-    
-    let arr = document.getElementsByClassName("more");
-
-    for(let i = 0; i < arr.length; i++)
-    arr[i].style.display="none";
-
-    document.getElementById("moreB").style.display="block";
-}

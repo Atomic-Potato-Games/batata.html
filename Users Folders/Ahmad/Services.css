@@ -1,3 +1,5 @@
+header,nav,main,footer{display:block;}
+
 body
 {
     margin:0px;
@@ -20,6 +22,7 @@ nav#navigation
 {
     background-color: black;
 }
+
 nav a
 {
     
@@ -33,7 +36,6 @@ nav  a:hover{
     border: 5px solid #9615DB;
     border-right: 0;
 }
-
 
 nav ul
 {
@@ -61,7 +63,6 @@ nav ul li
 
     font-size: 1.2em;
 }
-
 nav ul li:hover
 {
     cursor:pointer;
@@ -313,14 +314,9 @@ h1.servheader
     margin-top: 2%;
     margin-bottom: 3%;
 }
-.servblock
-{
-    background-color: #FFFFFF;
-    
-    color:#7D7F80;
 
-    box-shadow: #9615DB 5px 5px 5px;
-}
+
+
 
 #representationText{
     border-radius: 3%;
@@ -380,6 +376,7 @@ h1.servheader
 #generateTable{
     margin: auto;
 }
+
 
 
 #generateTable input{

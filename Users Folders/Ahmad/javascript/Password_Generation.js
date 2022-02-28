@@ -1,0 +1,41 @@
+function colorRed() 
+{
+    document.getElementById("generate").style.color = "red";//changed id to generate
+}
+
+function genPassword(id) {
+
+    var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var passwordLength = document.getElementById("selectPassLength").value;
+    passwordLength = parseInt(passwordLength);
+    var pswd = "";
+
+    for (var i = 0; i <= passwordLength; i++) {
+
+        var randomNumber = Math.floor(Math.random() * chars.length);
+        pswd += chars[randomNumber];
+    }
+    document.getElementById(id).style.backgroundColor = "lightgreen";
+
+
+    document.getElementById(id).value = pswd;
+
+
+
+}
+
+function appear(id) {
+    document.getElementById(id).style.color = "black";
+}
+
+function genPasswords() {
+
+    genPassword("password");
+
+    genPassword("password1");
+
+    genPassword("password2");
+    genPassword("password3");
+    genPassword("password4");
+    genPassword("password5");
+}
