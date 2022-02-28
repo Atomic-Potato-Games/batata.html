@@ -58,7 +58,7 @@
             <div class="service" id="passcheck" style="display:none;">
                 
                 <div class="servbody">
-                    <h1>CyberTater's Password Strength Test</h1>
+                    <h1 class="servheader">CyberTater's Password Strength Test</h1>
 
                     <input type="password" placeholder="Enter Password" size="40" name="Password" id="Password"/> <br/><br/>
                     <input type="button" id="passcheck_button" onclick="setMeter()" value=" Check "/>
@@ -77,7 +77,7 @@
                     <br/>
 
                     <div class="servdesc">
-                        <p width="30%">
+                        <p>
                             This is CyberTater's Advanced Password Strength Check.</br>
                             </br>
                             Including advanced pattern recognition algorithm, this test insures that your password is impossible to brute force, difficult to duplicate, and easy to memorize at the same time.</br>
@@ -127,27 +127,43 @@
                     
                     <form name="Hashing" id="HashingForm">
                         <h2>Normal Text</h2>
-                        <textarea id="tobehashed" name="unhashed" min-cols="80" cols="80" rows="13">Normal Text Here</textarea>
-                        <input onclick="event.preventDefault();hashingFunction()" type="submit">
+                        <textarea id="tobehashed" name="unhashed" placeholder="Enter Normal Text Here" cols="70" rows="13"></textarea>
+                        <input onclick="event.preventDefault();hashingFunction()" type="submit" id="HashB" value="#&nbsp;#&nbsp;#&nbsp;#&nbsp;# Hash #&nbsp;#&nbsp;#&nbsp;#&nbsp;#">
                         <br/>  
                         <h2>Hashed Text</h2>
-                        <textarea id="hashpass" name="hashpass" cols="80" rows="13">Hashed Text</textarea> 
+                        <textarea id="hashpass" name="hashpass" placeholder="###&nbsp;Hashed Text&nbsp;###" cols="70" rows="13"></textarea> 
                     </form>
 
                 </div>
 
                 <div class="servgap"></div>
-
-                <div class="servdesc">
-                    <h2>Hashing Service</h2>
-                    <p>
-                        This is Unity's Advanced Password Strength Check.</br>
-                        It Contain every test a normal test would have.</br>
-                        But, what makes this test superior among</br>
-                        others is this ... that ... and those, too...                
-                    </p>
+                <div class="servbody">
+                    <img src="assets/dribbb.gif" width="100%">
+                    <div class="servdesc">
+                        <h1 class="servheader">Hashing Service</h1>
+                        <p>
+                            <details>
+                                <summary>CyberTater's Hashing Service</summary>
+                            A powerful tool that can process huge amounts of data with ease.<br/>
+                            Implementing algorithms tailored for user satisfaction, this service is designed for efficiency and precision.
+                            </details>
+                            <br/>
+                            Awards won for its perfect design include:
+                        </p>
+                        <a href="https://sigplan.org/Awards/Service">
+                            <blockquote>
+                                <img src="assets/sigplan.gif" width="100%">
+                                Distinguished Service Award
+                            </blockquote>
+                        </a>
+                        <a href="https://www.ieee.org">
+                            <blockquote>
+                                <img src="assets/R.png" width="100%">
+                                IEEE Best Service for the year 2019
+                            </blockquote>
+                        </a>
+                    </div>
                 </div>
-                
             </div>
                 
 

@@ -62,11 +62,13 @@ footer nav
     padding-top: 0px;
 }
 
+a
+{
+    text-decoration: none;
+}
 dt{
     font-weight: bold;
 }
-
-
 hr
 {
     width:80%;
@@ -110,15 +112,48 @@ footer nav div
     background-color: #9615DB;
 }
 
+blockquote
+{
+    
+    padding: 30px;
+    border: 1px solid #9615DB;
+    border-left: 9px solid #9615DB;
+
+
+    background-color: white;
+    color:#2D3032;
+}
+
+
 textarea
 {
     resize: none;
+    border: 4px outset darkorchid;
+    
+    padding:10px;
 }
 
 td input
 {
     font-size: medium;
 }
+
+h1.servheader
+{
+    padding: 10px;
+    border:2px outset #9615DB;
+
+    width: 90%;
+
+    color: #9615DB;
+    text-shadow: 1px 1px 1px #2D3032;
+}
+
+
+
+
+
+
 
 
 .meter
@@ -140,7 +175,7 @@ td input
 {
     background-color: white;
     padding: 3%;
-    width:45%;
+    width:48%;
 }
 
 .servgap
@@ -157,6 +192,15 @@ td input
     min-width:30%;
     width: 90%;
 }
+
+.quotes
+{
+    color: white;
+    padding-left: 3%;
+    display:flex;
+    flex-direction: column;
+}
+
 
 .button{
     font-size:x-large;
@@ -220,55 +264,18 @@ td input
     
 }
 
-#passcheck h1
-{
-    
-    
-    padding: 10px;
-    border:2px outset #9615DB;
-
-    color: #9615DB;
-    text-shadow: 1px 1px 1px #2D3032;
-}
-#passcheck blockquote
-{
-    
-    padding: 30px;
-    border: 1px solid #9615DB;
-    border-left: 9px solid #9615DB;
-
-    background-color: white;
-    color:#2D3032;
-}
 #Password, #button
 {
     font-size: 3vh;
 }
-.quotes
+
+
+#HashB
 {
-    color: white;
-    padding-left: 3%;
-    display:flex;
-    flex-direction: column;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
-#server
-{
-    padding: 20px;
-    border: 2px dashed black;
-}
-#server label
-{
-    font-size: 2em;
-}
-
-
-
-
-
-
-
 
 
 #cheat
