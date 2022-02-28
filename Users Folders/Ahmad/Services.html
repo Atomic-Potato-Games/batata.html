@@ -20,7 +20,7 @@
             <a href="../Ahmad/Services.html", class="navLinks">Services & Products</a> <br>
             <a href="../Medyan/ourteam.html", class="navLinks">Our Team</a> <br>
             <a href="../Majd/about us.html", class="navLinks">About Us</a> <br>
-            <a href="../Sirin/index.html", class="navLinks">Contact Us</a>
+            <a href="../Sirin/contact.html", class="navLinks">Contact Us</a>
         </nav>
 
         <input src="../Shared Content/UpArrow.png" id="topButton" type="image" height="50px" width="50px" style="z-index: 1;">
@@ -58,17 +58,18 @@
             <div class="service" id="passcheck" style="display:none;">
                 
                 <div class="servbody">
-                    <h1>Unity's Password Strength Test</h1>
+                    <h1>CyberTater's Password Strength Test</h1>
 
                     <input type="password" placeholder="Enter Password" size="40" name="Password" id="Password"/> <br/><br/>
                     <input type="button" id="passcheck_button" onclick="setMeter()" value=" Check "/>
-                    <p class="meter">No Password!<p>
-                    <p class="meter">Weak</p>
-                    <p class="meter">Medium</p>
-                    <p class="meter">Strong</p>
-                    <p class="meter">Fortified</p>
-                    <p class="meter">Insane!!</p>
-                    <p class="meter" style="display:inline">[ The Strength of the Password ]</p>
+                    <p>[ The Strength of the Password:
+                        <span class="meter"style="color: red">No Password!</span>
+                        <span class="meter">Weak</span>
+                        <span class="meter"style="color: aquamarine">Medium</span>
+                        <span class="meter"style="color: #0022EE">Strong</span>
+                        <span class="meter" style="color:darkorchid">Fortified</span>
+                        <span class="meter" style="color:darkviolet; text-shadow: 2px 2px 3px red;">Extreme!!</span>]
+                    </p>
 
                     <br/>
                     <br/>
@@ -76,16 +77,45 @@
                     <br/>
 
                     <div class="servdesc">
-                        <p>
-                            This is Unity's Advanced Password Strength Check.</br>
-                            It Contain every test a normal test would have.</br>
-                            But, what makes this test superior among</br>
-                            others is this ... that ... and those, too...
+                        <p width="30%">
+                            This is CyberTater's Advanced Password Strength Check.</br>
+                            </br>
+                            Including advanced pattern recognition algorithm, this test insures that your password is impossible to brute force, difficult to duplicate, and easy to memorize at the same time.</br>
+                            Our team has made a list of categories in which your password can be assigned to, depending on its strength and structure:
                         </p>
+
+                        <dl>
+                            <dt>Weak</dt>
+                            <dd>Unsecure,<br/> easy to brute force passwords are labelled as <span style="background-color:#D2D3D3; border-radius:10%">Weak</span></dd>
+                            <dt style="color:aquamarine">Medium</dt>
+                            <dd>Partially secure,<br/> difficult to brute force passwords are labelled as <span style="background-color:#D2D3D3; color:aquamarine;border-radius:10%;">Medium</span></dd>
+                            <dt style="color:#0022EE">Strong</dt>
+                            <dd>Secure,<br/>resource-expensive brute force is required to crack a password labelled as <span style="background-color:#D2D3D3; color:#0022EE;border-radius:10%;">Strong</span></dd>
+                            <dt style="color:darkorchid">Fortified</dt>
+                            <dd>Secure,<br/>impossible to brute force and easy to memorize passwords are labelled as <span style="background-color:#D2D3D3;border-radius:10%;color:darkorchid">Fortified</span></dd>
+                            <dt style="color:darkviolet; text-shadow: 2px 2px 3px red;">Extreme</dt>
+                            <dd>Secure,<br/>impossible to brute force, but extremely hard to memorize passwords are labelled as <span style="background-color:#D2D3D3;border-radius:10%;color:darkviolet">Extreme</span></dd>
+                        </dl>
                     </div>
 
                     
                 </div>
+                <div class="quotes">
+                <blockquote>The CyberTater Password Check is superior to all tests.<br/> It is up standards and beyond.</blockquote>
+                <p>~ Nord VPN Senior Engineer</p>
+                <hr/>
+                <blockquote>A very useful tool</blockquote>
+                <p>~ E-Corp Senior Engineer</p>
+                <hr/>
+                <input type="button" onclick="show_more()" id="moreB" value="Show More" style="width:fit-content; margin-left:auto; margin-right:auto">
+                <blockquote class="more">Not your typical password check</blockquote>
+                <p class="more">~ Bill Gates</p>
+                <hr class="more"/>
+                <blockquote class="more">Not gonna brute force that...</blockquote>
+                <p class="more">~ Hacker001</p>
+                <input type="button" onclick="show_less()" class="more" value="Show Less" style="width:fit-content; margin-left:auto; margin-right:auto">
+                </div>
+
             </div>
 
 

@@ -8,9 +8,6 @@ function passCheck() {
 
     let str = read_Input();
 
-    if (str.length < 8)
-        return 0;
-
     var flag_lowercase = 0;
     var flag_uppercase = 0;
     var flag_number = 0;
@@ -31,7 +28,7 @@ function passCheck() {
 function setMeter()
 {
     let strength = passCheck();
-    let arr = document.getElementById("meter");
+    let arr = document.getElementsByClassName("meter");
     let meter = 0;
     if (strength > 0){meter = 1;}
     if (strength > 15){meter = 2;}
@@ -39,8 +36,34 @@ function setMeter()
     if (strength > 48){meter = 4;}
     if (strength >= 60) {meter = 5;}
 
-    for(let i = 0; i < arr.length; i++)
-    arr[meter].style.display = "none";
+    let i;
+    for(i = 0; i < arr.length; i++)
+    arr[i].style.display = "none";
+
+    console.log(i);
 
     arr[meter].style.display = "inline";
+
+    if(meter == 5){getElementById("Password").style.border_top.color = "#9615DB"}
+    if(meter == 5){getElementById("Password").style.border_top.color = "yellow"}
+}
+
+function show_more()
+{
+    
+    let arr = document.getElementsByClassName("more");
+
+    for(let i = 0; i < arr.length; i++)
+    arr[i].style.display="block";
+    document.getElementById("moreB").style.display="none";
+}
+function show_less()
+{
+    
+    let arr = document.getElementsByClassName("more");
+
+    for(let i = 0; i < arr.length; i++)
+    arr[i].style.display="none";
+
+    document.getElementById("moreB").style.display="block";
 }
