@@ -27,6 +27,27 @@ body
 	text-decoration: none;
 }
 
+/*hon*/
+nav#navigation
+{
+    background-color: black;
+}
+nav a
+{
+    
+    
+    border: 5px solid black;
+    border-right: 0;
+}
+
+nav  a:hover{
+    background-color: #210530;
+    border: 5px solid #9615DB;
+    border-right: 0;
+}
+
+
+
 #navheading
 {
 	clear: right; 
@@ -40,6 +61,10 @@ body
 	
 	font-size: 40px; 
 	color: #ffffff;
+}
+
+header{
+	clear:right;
 }
 
 #navigation

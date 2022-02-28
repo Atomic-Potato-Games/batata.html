@@ -15,6 +15,26 @@ body
     #7D7F80
     #D2D3D3
 */
+
+nav#navigation
+{
+    background-color: black;
+}
+nav a
+{
+    
+    
+    border: 5px solid black;
+    border-right: 0;
+}
+
+nav  a:hover{
+    background-color: #210530;
+    border: 5px solid #9615DB;
+    border-right: 0;
+}
+
+
 nav ul
 {
     width:250px;
