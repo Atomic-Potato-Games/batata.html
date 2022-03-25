@@ -7,9 +7,7 @@ function displaydiv(index)
 
     let i;
     for(i = 0; i < len; i++)
-    {
         arr[i].style.display = "none";
-    }
     
     arr[index].style.display = "flex";
 }

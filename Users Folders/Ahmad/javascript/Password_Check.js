@@ -43,7 +43,4 @@ function setMeter()
     console.log(i);
 
     arr[meter].style.display = "inline";
-
-    if(meter == 5){getElementById("Password").style.border_top.color = "#9615DB"}
-    if(meter == 5){getElementById("Password").style.border_top.color = "yellow"}
 }

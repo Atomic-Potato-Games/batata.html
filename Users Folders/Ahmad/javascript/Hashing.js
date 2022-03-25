@@ -4,6 +4,7 @@ function hashingFunction() {
     let arr = pwd.split("");
     console.log(arr);
     let j=0;
+    
     for(let i = 0; i<arr.length; i++)
     {
 

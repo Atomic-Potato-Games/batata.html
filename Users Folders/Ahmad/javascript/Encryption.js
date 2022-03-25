@@ -75,12 +75,7 @@ encryptKey.forEach(input => {input.addEventListener('click', function() {
 encryptKey.forEach(input => {input.addEventListener('keyup', function() {
   encryptionKey[input.id] = input.valueAsNumber;
 })});
-decryptKey.forEach(input => {input.addEventListener('click', function() {
-  decryptionKey[input.id] = input.valueAsNumber;
-})});
-decryptKey.forEach(input => {input.addEventListener('keyup', function() {
-  decryptionKey[input.id] = input.valueAsNumber;
-})});
+
 
 const bobSend = mssge => {
   let BobCht = document.createElement("div");
